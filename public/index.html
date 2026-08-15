@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NPHCDA Onboarding Tracker · The Learning Sphere</title>
+<link rel="icon" href="/logo.png">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <div class="identity">
+      <img class="logo" src="/logo.png" alt="The Learning Sphere logo">
+      <div class="identity-text">
+        <span class="eyebrow">The Learning Sphere (TLS)</span>
+        <h1>NPHCDA Health Worker Onboarding</h1>
+        <p class="stat-line">5,000 Health Workers &nbsp;·&nbsp; 8 States &nbsp;·&nbsp; 156 LGAs &nbsp;·&nbsp; ~1,560 PHCs</p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <span class="sync-status" id="syncStatus">Loading…</span>
+      <div class="name-field">
+        <label for="editorName">Editing as</label>
+        <input id="editorName" type="text" placeholder="Your name" autocomplete="off">
+      </div>
+      <button class="btn" id="exportBtn" type="button">Export backup</button>
+    </div>
+  </header>
+
+  <section class="overview" id="overview" aria-label="Programme overview">
+    <div class="overview-head">
+      <span class="rag-chip" id="ragChip">Loading</span>
+      <h2>Where We Are</h2>
+      <div class="overview-progress" id="overviewProgress"></div>
+    </div>
+    <div class="roadmap" id="roadmap"></div>
+    <div class="overview-cols">
+      <div class="ov-col attention"><h3>Needs Attention</h3><ul id="colAttention"></ul></div>
+      <div class="ov-col done"><h3>Recently Completed</h3><ul id="colDone"></ul></div>
+      <div class="ov-col next"><h3>Up Next</h3><ul id="colNext"></ul></div>
+    </div>
+  </section>
+
+  <nav class="phase-rail" id="phaseRail" aria-label="Jump to phase"></nav>
+
+  <section class="filters" aria-label="Filters">
+    <div class="filter-group" id="wsFilters"><span class="fg-label">Workstream</span></div>
+    <div class="filter-group" id="statusFilters"><span class="fg-label">Status</span></div>
+    <div class="search-box">
+      <input id="searchInput" type="text" placeholder="Search tasks or owners…" autocomplete="off">
+    </div>
+  </section>
+
+  <main class="board" id="board"></main>
+
+  <footer class="page-foot">
+    <span>Seeded from the operational plan, phased rollout plan, provisioning requirements and Week 1 status report. Shared board — edits save for the whole team.</span>
+    <button class="linklike" id="resetBtn" type="button">Reset to original plan</button>
+  </footer>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "nphcda-onboarding-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Team progress tracker for the NPHCDA Health Worker LMS onboarding programme",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
